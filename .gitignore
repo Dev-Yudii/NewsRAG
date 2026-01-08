@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environments
+env/
+venv/
+.venv/
+newsrag-env/
+
+# Conda
+.conda/
+conda-env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Raw Data
+data/raw/
+
+# Automatically generated reports
+reports/*.json
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# IDEs / Editors
+.vscode/
+.idea/
