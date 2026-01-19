@@ -28,7 +28,7 @@ REQUEST_DELAY = 2  # seconds between requests
 
 # Metrics Initialization
 metrics = {
-    "timestamp": datetime.utcnow().isoformat(),
+    "timestamp": datetime.now(datetime.timezone.utc).isoformat(),
     "total_urls": 0,
     "robots_blocked": 0,
     "download_failed": 0,
@@ -126,7 +126,7 @@ print("============================\n")
 # Saving external report
 os.makedirs(REPORTS_FOLDER, exist_ok=True)
 
-report_name = f"ingestion_{datetime.utcnow().strftime('%Y%m%d_%H%M%S')}.json"
+report_name = f"ingestion_{datetime.now(datetime.timezone.utc).strftime('%Y%m%d_%H%M%S')}.json"
 report_path = os.path.join(REPORTS_FOLDER, report_name)
 
 with open(report_path, "w", encoding="utf-8") as f:
