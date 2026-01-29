@@ -17,8 +17,12 @@ conda-env/
 # Jupyter
 .ipynb_checkpoints/
 
-# Raw Data
+
+# Data Layers
 data/raw/
+data/standardized/
+data/chunks/
+data/embeddings/
 
 # Automatically generated reports
 reports/*.json
